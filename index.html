@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title> CBSE / Results </title>
+	<link rel="icon" href="cbse/images/favicon.png" type="Image/x-icon">
+	<link rel="stylesheet" type="text/css" href="cbse/A3.css">
+	<style>
+		body {
+			margin: 0;
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			overflow: hidden;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			box-shadow: .2px .3px .4px;
+		}
+
+		li {
+			float: middle;
+		}
+
+		li a {
+			color: black;
+			text-align: center;
+			font-family: Myriad Pro;
+			font-size: 12pt;
+			text-decoration: none;
+		}
+
+		.navbarContainer {
+			width: 100%;
+			box-shadow: 0px 5px 9px 0px rgba(35, 31, 32, .2);
+			height: 75;
+		}
+
+		.navbar {
+			padding: 10px 20px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			font-family: Quicksand;
+			font
+			font-size: 12pt;
+		}
+
+		.centerImage {
+			flex: 1;
+			padding: 40px 0px 40px 40px;
+
+
+		}
+
+		#images {
+			display: flex;
+			width: 100%;
+			flex: 1;
+			height: calc(100vh - 75px);
+			min-height: 600px;
+
+		}
+
+		.centerText {
+			text-align: center;
+		}
+
+		#..heading {
+
+		}
+
+		.ExaminationContainer {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: auto auto;
+			grid-gap: 20px;
+			width: 90%;
+			margin: 25px auto;
+			font-family: Poppins;
+
+		}
+		
+
+		.examination {
+			position: relative;
+			background-color: #fff;
+			padding: 15px 0px;
+			border-radius: 40px;
+			box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+
+		}
+		.examination > img {
+			height: 160px;
+			position: absolute;
+			right: 0px;
+			left: 0px;
+			top: -160px;
+			display: none;	
+			margin: 0 auto;
+			justify-content: right;
+			justify-items: right;
+			justify-self: right;
+			
+		}
+
+		.examHeading {
+			margin-bottom: 0;
+		}
+
+		.examClass {
+			margin-bottom: 0;
+			margin-top: 0;
+
+		}
+
+		.examDate {
+			margin-top: 0.5em;
+		}
+
+
+		.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #00ced1;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px 30px;
+}
+
+.button1:hover {
+    background-color: #00ced1;
+    color: white;
+}
+
+		.dropdownContainer {
+			display: flex;
+			flex: 1;
+			flex-direction: row;
+			justify-content: center
+		}
+
+		.selectMenu {
+			padding: 5px 20px;
+			border-radius: 10px;
+			margin: 0 20px;
+			-moz-appearance: none;
+			/* Firefox */
+			-webkit-appearance: none;
+			/* Safari and Chrome */
+			appearance: none;
+			background: url('http://www.free-icons-download.net/images/small-down-arrow-icon-15593.png');
+			background-repeat: no-repeat;
+			background-position: calc(100%) calc(0.5em), calc(100%) calc(1em), 100% 0;
+			background-size: 20px 10px;
+			font-family: Quicksand;
+		}
+
+		@media only screen and (max-width: 767px) {
+			.ExaminationContainer {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-gap: 20px;
+				width: 90%;
+				margin: 25px auto;
+
+			}
+
+			#images {
+				display: none
+			}
+
+			.navbarContainer {
+				box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+
+			}
+			.hide {
+				display: none
+			}
+
+			.navbar {
+				justify-content: center
+			}
+		}
+	</style>
+
+	<body>
+		<div class="navbarContainer">
+			<div class="navbar">
+
+				<p class="hide"> <b> Examresults.com </b> </p>
+				<img src="images/image3.png" class="icon" style="width:45px;height:45px;">
+				<p class="hide"> <b> Contact Us </b> </p>
+			</div>
+
+		</div>
+		<div style="position: relative">
+			<div style="position:absolute; width: 100%;">
+				<div id="images">
+					<img src="images/image4.png" />
+					<img src="images/image6.png" class="centerImage" />
+					<img src="images/image5.png" style="align-self: flex-end" />
+				</div>
+			</div>
+			<div style="position: absolute; width: 100%">
+				<h1 id="heading" class="centerText" style ="font-family:Quicksand; color:#00ced1"> Examination results of 2018</h1>
+				<p class="centerText" style ="font-family:Quicksand;"> <b> Brought to you by National Informatics center </b> </p>
+				<div class="dropdownContainer">
+					<select class="selectMenu">
+						<option>Secondary School Examination</option>
+						<option>State Board</option>
+						<option>JEE</option>
+						<option>Medical</option>
+					</select>
+					<select class="selectMenu">
+						<option>9</option>
+						<option>10</option>
+						<option>11 </option>
+						<option>12</option>
+					</select>
+				</div>
+				<div style="width: 100%; text-align: center">
+					<div class="ExaminationContainer centerText">
+						<div class="examination">
+							<img src="images/image7.png" style="" class="centerText popupImage"/>
+							<p class="examHeading">Secondary School Examination</p>
+							<p class="examClass"> <b> (Class X) - Compartment </b> </p>
+							<p class="examDate">August 9th</p>
+							<button class="button button1" onclick="buttonClicked()" > Check </button>
+
+						</div>
+						<div class="examination">
+								<img src="images/image7.png" style="" class="centerText popupImage"/>
+							<p class="examHeading">Secondary School Examination</p>
+							<p class="examClass"> <b> (Class XII) - Compartment </b> </p>
+							<p class="examDate">August 9th</p>
+							<button class="button button1" onclick="buttonClicked()"> Check </button>
+						</div>
+						<div class="examination">
+								<img src="images/image7.png" style="" class="centerText popupImage"/>
+
+							<p class="examHeading"> CBSE UGC </p>
+							<p class="examClass"> <b> Net Examination July </b> </p>
+							<p class="examDate">August 9th</p>
+							<button class="button button1" onclick="buttonClicked()">  Check </button>
+						</div>
+						<div class="examination">
+								<img src="images/image7.png" style= ""class="centerText popupImage "width:500px;height:600px;""/>
+
+							<p class="examHeading"> NEET </p>
+							<p class="examClass"> <b> UG Exams result </b> </p>
+							<p class="examDate">August 9th</p>
+							<button class="button button1" onclick="buttonClicked()" > Check </button>
+						</div>
+						<div class="examination">
+								<img src="images/image7.png" style="" class="centerText popupImage"/>
+
+							<p class="examHeading">JEE MAINS </p>
+							<p class="examClass"> <b> Ranking (1 & 2) </b> </p>
+							<p class="examDate">August 9th</p>
+							<button class="button button1" onclick="buttonClicked()" > Check </button>
+						</div>
+						<div class="examination">
+								<img src="images/image7.png" style="" class="centerText popupImage"/>
+
+							<p class="examHeading">Secondary School Examination</p>
+							<p class="examClass"> <b> (Class X) - Compartment </b> </p>
+							<p class="examDate">August 9th</p>
+							<button class="button button1" onclick="buttonClicked()" > Check </button>
+						</div>
+						<div class="examination">
+								<img src="images/image7.png" style="" class="centerText popupImage"/>
+
+							<p class="examHeading">JEE MAINS</p>
+							<p class="examClass"> <b> Ranking 1 & 2 </b> </p>
+							<p class="examDate">August 9th</p>
+							<button class="button button1" onclick="buttonClicked()" > Check </button>
+						</div>
+						<div class="examination">
+
+								<img src="images/image7.png" style="" class="centerText popupImage"/>
+							<p class="examHeading">Secondary School Examination</p>
+							<p class="examClass"> <b> (Class X) - Compartment </b> </p>
+							<p class="examDate">August 9th</p>
+							<button class="button button1" onclick="buttonClicked()" > Check </button>
+						</div>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+
+					<p class="centerText" style="margin-top: 0; margin-bottom: 0; font-family:Poppins; font-size:7pt;" >Neither NIC or CBSC is responsibel for for any advertant error that may have crept in the results being published on
+						NET. The results published on the net are for immediate information tot the examinees</p>
+					<p class="centerText" style="margin-top: 0; margin-bottom: 0; font-family:Poppins; font-size:7pt;" >Designed, Developed and hosted by National Informatics Center</p>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/F680CAD4-A884-5F41-958F-F616E3F9227F/main.js" charset="UTF-8"></script><script>
+			document.addEventListener('click', function(e) {
+			e = e || window.event;
+			var target = e.target || e.srcElement,
+				text = target.textContent || target.innerText;   
+		}, false);
+			function buttonClicked(){
+				var result = window.event.target.parentElement;
+				var spans = document.querySelectorAll(".popupImage");
+				// console.log(p);
+				for(i=0; i<spans.length; i++) {
+    					spans[i].style.display = "none";
+				}
+				result.children[0].style.display = "block";
+			}
+			function eventCatch(e){
+				console.log(e)
+			}
+		</script>
+	</body>
+
+</html>
